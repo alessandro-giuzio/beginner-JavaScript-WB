@@ -49,12 +49,28 @@
       ];
 
       /*
-      Static Methods
-    */
+           Static Methods
+         */
+      function logTopping(topping, index, originalArray) {
+        const nextTopping = originalArray[index + 1];
+        const prevTopping = originalArray[index - 1];
+        // log the topping
+        console.log(topping);
+        prevTopping ? console.log(prevTopping) : console.log('none');
+
+        // log the prev topping if there is one
+
+        // log the next topping if there is one
+        nextTopping ? console.log(nextTopping) : console.log('none');
+        //if its the last item in the arr ay say good bye
+        if (index === originalArray.length - 1) {
+          console.log('goodbye');
+        }
+        console.log('----------🍕--------------');
+      }
+      toppings.forEach(logTopping);
 
       // Array.of();
-
-     
 
       // Make a function that creates a range from x to y with Array.from();
 
@@ -63,8 +79,8 @@
       // Take the meats object and make three arrays with Object.entries(), Object.keys, Object.values()
 
       /*
-      Instance Methods
-    */
+           Instance Methods
+         */
 
       // Display all bun types with " or " - use join()
 
@@ -85,8 +101,8 @@
       // flip those toppings around with reverse()
 
       /*
-      Callback Methods
-    */
+           Callback Methods
+         */
 
       // find the first rating that talks about a burger with find()
       // find all ratings that are above 2 with filter()
@@ -100,8 +116,8 @@
       // Sort the prices with sort()
 
       /*
-      Looping Methods (next)
-    */
+           Looping Methods (next)
+         */
     </script>
   </body>
 </html>
